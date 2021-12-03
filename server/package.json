@@ -1,0 +1,19 @@
+{
+  "name": "fefu-market",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "serve": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "ip": "^1.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
