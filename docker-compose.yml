@@ -8,11 +8,3 @@ services:
     ports:
       - "3000:8080"
     container_name: hackaton-web-app
-    volumes:
-      - ./server:/usr/src/app/server
-      - /usr/src/app/server/node_modules
-      - ./client:/usr/src/app/client
-      - /usr/src/app/client/node_modules
-
-volumes:
-  app: null

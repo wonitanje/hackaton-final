@@ -12,6 +12,7 @@
         </aside>
       </div> -->
       <div class="feed__list video">
+        <h1 class="feed__title">Будет интересно</h1>
         <router-link v-for="(video, idx) in videos" :to="{ name: 'Video', params: { id: video.id } }" :key="idx" class="video__item">
           <picture class="video__preview">
             <img :src="`${baseURL}static/${video.video_file_name}.jpg`" alt="">
@@ -72,7 +73,15 @@ export default {
 <style lang="scss" scoped>
 .feed {
   &__inner {
+    padding: 32px 70px;
 
+  }
+
+  &__title {
+    margin: 10px 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: 28px;
   }
 
   &__paginate {
@@ -91,11 +100,11 @@ export default {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 
   &__item {
-    margin: 0 10px;
-    padding: 5px;
-    width: 150px;
+    margin-right: 10px;
+    width: 308px;
     aspect-ratio: 16/9;
     color: #212121;
   }

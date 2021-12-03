@@ -25,6 +25,7 @@
 
 <style lang="scss" scoped>
 .header {
+  padding: 0 32px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -32,7 +33,6 @@
   border-bottom: 2px solid #ddd;
 
   &__logo {
-    margin-left: 10px;
     display: block;
     width: 20px;
     height: 20px;
@@ -51,7 +51,7 @@
   }
 
   &__item {
-    margin: 0 10px;
+    margin: 0 5px;
   }
 
   &__more {

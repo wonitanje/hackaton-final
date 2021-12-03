@@ -1,7 +1,7 @@
 <template>
   <nav class="subheader">
     <ul class="subheader__navigation">
-      <li class="subheader__item"><a class="subheader__link link"><h1 class="subheader__title">Телеканал</h1></a></li>
+      <a class="subheader__link link"><h1 class="subheader__title">Телеканал</h1></a>
       <li class="subheader__item"><a class="subheader__link link">Телепрограмма</a></li>
       <li class="subheader__item"><a class="subheader__link link">Архив программ</a></li>
       <li class="subheader__item"><a class="subheader__link link">Вечерний РБК</a></li>
@@ -31,6 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 .subheader {
+  padding: 0 32px;
   width: 100%;
   height: 75px;
   border-bottom: 2px solid #ddd;
